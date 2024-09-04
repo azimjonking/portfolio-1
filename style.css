@@ -479,7 +479,6 @@ footer p a {
 header,
 .service,
 .skills,
-.contact,
 footer {
   display: none;
 }
@@ -507,6 +506,16 @@ footer {
     gap: 50px;
   }
   /* about section end */
+
+  /* contact section start */
+  .contact {
+    padding: 60px;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+  /* contact section end */
 }
 
 @media screen and (max-width: 768px) {
@@ -559,6 +568,17 @@ footer {
     gap: 30px;
   }
   /* about section end */
+
+  /* contact section start */
+  .contact {
+    padding: 60px 20px;
+  }
+  .contact h1 {
+    font-size: 36px;
+    text-align: center;
+    line-height: 40px;
+  }
+  /* contact section end */
 }
 
 @media screen and (max-width: 576px) {
@@ -597,6 +617,13 @@ footer {
     font-size: 14px;
   }
   /* about section end */
+
+  /* contact section start */
+  .contact h1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  /* contact section end */
 }
 
 @media screen and (max-width: 420px) {
@@ -631,6 +658,20 @@ footer {
     grid-template-columns: 1fr;
   }
   /* about section end */
+
+  /* contact section start */
+  .contact {
+    padding: 40px 20px;
+  }
+  .contact h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .contact .form-groups {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  /* contact section end */
 }
 
 @media screen and (max-width: 320px) {
