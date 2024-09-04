@@ -175,6 +175,7 @@ nav ul li a:active {
   width: 100%;
   padding: 60px 130px;
 }
+
 .about-header {
   width: 100%;
   display: flex;
@@ -198,6 +199,7 @@ nav ul li a:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 100px;
 }
 
@@ -230,11 +232,13 @@ nav ul li a:active {
   margin-top: 18px;
   font-size: 18px;
   font-weight: 700;
+  text-align: center;
 }
 
 .about-detail > p:nth-child(3) {
   margin-top: 3px;
   font-weight: normal;
+  text-align: center;
 }
 
 .about-detail > a {
@@ -243,6 +247,7 @@ nav ul li a:active {
   color: #ffffff;
   font-size: 18px;
   font-weight: normal;
+  text-align: center;
 }
 
 /* about end */
@@ -472,7 +477,6 @@ footer p a {
 
 /* media queries start */
 header,
-.about,
 .service,
 .skills,
 .contact,
@@ -487,6 +491,22 @@ footer {
     gap: 50px;
   }
   /* hero section start */
+
+  /* about section start */
+  .about {
+    padding: 60px;
+  }
+
+  .about-header p {
+    width: 100%;
+  }
+
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  /* about section end */
 }
 
 @media screen and (max-width: 768px) {
@@ -519,10 +539,68 @@ footer {
   .hero-info p {
     font-size: 16px;
   }
-  /* hero section start */
+  /* hero section end */
+
+  /* about section start */
+  .about {
+    padding: 60px 20px;
+  }
+
+  .about-header {
+    gap: 20px;
+  }
+  .about-header h1 {
+    font-size: 36px;
+  }
+  .about-header p {
+    font-size: 16px;
+  }
+  .about-container {
+    gap: 30px;
+  }
+  /* about section end */
+}
+
+@media screen and (max-width: 576px) {
+  /* about section start */
+  .about-header {
+    gap: 10px;
+  }
+  .about-header h1 {
+    font-size: 28px;
+  }
+  .about-header p {
+    font-size: 14px;
+  }
+  .about-container {
+    gap: 20px;
+  }
+  .about-detail {
+    width: 100%;
+  }
+  .about-detail .about-box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-detail .about-box span {
+    width: 10px;
+    height: 10px;
+  }
+
+  .about-detail > p {
+    margin-top: 14px;
+    font-size: 14px;
+  }
+
+  .about-detail > a {
+    font-size: 14px;
+  }
+  /* about section end */
 }
 
 @media screen and (max-width: 420px) {
+  /* hero section start */
   .hero {
     padding: 0 20px;
     gap: 10px;
@@ -536,11 +614,41 @@ footer {
   .hero-info .hero-btns button {
     padding: 10px;
   }
+  /* hero section end */
+  /* about section start */
+  .about {
+    padding: 40px 20px;
+  }
+  .about-header h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .about-header p {
+    font-size: 14px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  /* about section end */
 }
 
 @media screen and (max-width: 320px) {
   .hero {
     padding: 0 10px;
+  }
+
+  .about {
+    padding: 40px 10px;
+  }
+
+  .about-header h1 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .about-header p {
+    font-size: 12px;
   }
 }
 /* media queries end */
